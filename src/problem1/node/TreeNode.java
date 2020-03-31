@@ -6,5 +6,17 @@
  */
 package problem1.node;
 
-public class TreeNode {
+public class TreeNode<T> {
+    public T data;
+    public TreeNode<T> left = null;
+    public TreeNode<T> right = null;
+
+    public TreeNode(T data) {
+        this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return data.toString();
+    }
 }
